@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgimage"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.groupfinder_hci.MainActivity$PlaceholderFragment" >
+
+    <TextView
+        android:id="@+id/Unity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="116dp"
+        android:text="Unity ID: "
+        android:textColor="#ffffff"
+        android:typeface="monospace" />
+
+    <EditText
+        android:id="@+id/UserUnity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Unity"
+        android:layout_alignBottom="@+id/Unity"
+        android:layout_marginLeft="19dp"
+        android:layout_toRightOf="@+id/Unity"
+        android:ems="10"
+        android:textColor="#ffffff" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Unity"
+        android:layout_below="@+id/UserUnity"
+        android:layout_marginTop="45dp"
+        android:text="Password: "
+        android:textColor="#ffffff"
+        android:typeface="monospace" />
+
+    <EditText
+        android:id="@+id/UserPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Password"
+        android:layout_alignBottom="@+id/Password"
+        android:layout_alignLeft="@+id/UserUnity"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/UserPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Login"
+        android:textColor="#ffffff"
+        android:typeface="monospace" />
+
+    <Button
+        android:id="@+id/SignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Login"
+        android:layout_centerHorizontal="true"
+        android:text="Register here"
+        android:textColor="#ffffff"
+        android:typeface="monospace" />
+
+</RelativeLayout>
